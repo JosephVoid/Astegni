@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.5" height="23.5" viewBox="0 0 33.5 23.5">
+  <g id="Nav-burger" transform="translate(1.75 1.75)">
+    <line id="Line_17" data-name="Line 17" x2="30" fill="none" stroke="#1a7a53" stroke-linecap="round" stroke-width="3.5"/>
+    <line id="Line_18" data-name="Line 18" x2="30" transform="translate(0 10)" fill="none" stroke="#1a7a53" stroke-linecap="round" stroke-width="3.5"/>
+    <line id="Line_19" data-name="Line 19" x2="30" transform="translate(0 20)" fill="none" stroke="#1a7a53" stroke-linecap="round" stroke-width="3.5"/>
+  </g>
+</svg>
