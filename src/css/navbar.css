@@ -8,6 +8,7 @@
     padding: 1em;
     position: relative;
     font-family: 'Baloo 2', cursive;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -83,6 +84,31 @@ a{
 **/ 
 
 @media screen and (max-width: 550px) {
+    .sidebar{
+        height: auto;
+        width: 50%;
+        background-color: white;
+        outline: 2px solid #1A7A53;
+        color: black;
+        position: fixed;
+        right: 0;
+        z-index: 3;
+        transform: translate(0%,-100%);
+        transition: all 300ms ease;
+    }
+    .sidebar hr{
+        border: 1px solid #1A7A53;
+    }
+    .sidebar ul{
+        padding: 0 20px;
+        margin-top: 85px;
+        list-style: none;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .sidebar ul li{
+        margin-bottom: 10px;
+    }
     .logo img{
         margin-left: 0px;
         transform: scale(0.9);
@@ -95,5 +121,11 @@ a{
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
+    }
+    .nav-bar img{
+        z-index: 4;
+    }
+    #nc{
+        display: none;
     }
 }

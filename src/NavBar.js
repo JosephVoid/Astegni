@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from './assets/Logo.svg'
 import Icon from './assets/Nav-burger.svg'
+import Iconx from './assets/close.svg'
 //import Anime from 'animejs/lib/anime.es'
 import './css/navbar.css'
 
@@ -41,6 +42,20 @@ class NavBar extends React.Component{
 
             document.getElementById(p).style.cssText += "color: #1A7A53;font-weight:900"
         }
+        function sideBar(){
+            var SDB = document.getElementById("sdb");
+            SDB.style.transform = "translate(0%,30%)"
+            document.getElementById("nb").style.display = "none"
+            document.getElementById("nc").style.display = "block"
+            document.getElementsByClassName("overlay")[0].style.display = "block"
+        }
+        function sideBarClose(){
+            var SDB = document.getElementById("sdb");
+            SDB.style.transform = "translate(0%,-100%)"
+            document.getElementById("nb").style.display = "block"
+            document.getElementById("nc").style.display = "none"
+            document.getElementsByClassName("overlay")[0].style.display = "none"
+        }
         return(
             
             <nav className = "nav-bar">
@@ -62,7 +77,23 @@ class NavBar extends React.Component{
                     </div>
                 </div>
                 <div className = "nav-burger">
-                    <img src = {Icon} alt = "burger"></img>
+                    <img id="nb" src = {Icon} alt = "burger" onClick={sideBar}></img>
+                    <img id="nc" src = {Iconx} alt = "burger" onClick={sideBarClose}></img>
+                </div>
+                <div id="sdb" className = "sidebar">
+                    <ul>
+                        <li>
+                            <a href = "#">Home</a>                        
+                        </li>
+                        <hr></hr>
+                        <li>
+                            <a href = "#">Become a tutor</a>                        
+                        </li>
+                        <hr></hr>
+                        <li>
+                            <a href = "#">Login</a>                        
+                        </li>
+                    </ul>
                 </div>
             </nav>
         )
