@@ -1,0 +1,162 @@
+.main{
+    display: flex;
+    width: 100%;
+    height: 88.5vh;
+    justify-content: space-between;
+    font-family: 'Baloo 2', cursive;
+    position: relative;
+    overflow: hidden;
+}
+.header-text{
+    font-size: 6em;
+    font-weight: bolder;
+    margin: 50px 50px;
+    line-height: 90px;
+    letter-spacing: -2px;
+}
+.secondary-text{
+    font-size: 1.5em;
+    word-spacing: 2px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    font-weight: 100;
+    margin-left: 55px;
+    opacity: 0.6;
+    width: 50%;
+}
+.search{
+    margin: 100px 50px;
+}
+.search t{
+    font-weight: 600;
+    font-size: 1.25em;
+}
+.search input{
+    height: 25px;
+    margin-top: 1em;
+    min-width: 250px;
+    margin-right: 10px;
+    padding-left: 10px;
+    transition: all 200ms ease;
+}
+.search input:focus{
+    outline-color: #1A7A53;
+    outline-width: 2px;
+}
+.search a{
+    background-color: #1A7A53;
+    padding: 0.2em 1.5em 0.2em 0.4em;
+    color: white;
+    display: inline-flex;
+    position: relative;
+    transition: all 200ms ease;
+}
+.search a:hover{
+    padding-right: 0.4em;
+}
+.search a:hover svg{
+    right: -20px;
+    fill: #1A7A53;
+}
+.search a:hover svg path{
+    fill: #1A7A53;
+}
+.search svg{
+    position: absolute;
+    top: 28%;
+    right: 5px;
+    transform: scale(0.8);
+    transition: all 400ms ease;
+}
+.illustrations .background-e{
+    position: absolute;
+    left: 60%;
+    top:10%
+}
+
+/**
+    For Medium screens 900
+**/
+
+@media screen and (max-width: 901px) {
+    .header-text{
+        font-size: 4em;
+        line-height: 60px;
+    }
+    .illustrations .background-e{
+        transform: scale(0.8);
+    }
+}
+
+/**
+    For Medium screens 768-900
+**/
+
+@media screen and (max-width: 768px) {
+    
+    .header-text{
+        font-size: 3.5em;
+        line-height: 50px;
+    }
+    .illustrations .background-e{
+        left: -10%;
+        top: 70%;
+    }
+}
+
+
+/**
+    For Small screens
+**/ 
+
+@media screen and (max-width: 550px) {
+    .main{
+        overflow: auto;
+    }
+    .illustrations .background-e{
+        display: none;
+    }
+    .header-text{
+        margin-left: 30px;
+        font-size: 3em;
+        line-height: 50px;
+    }
+    .secondary-text{
+        margin-left: 30px;
+        width: 70%;
+        margin-bottom: 40px;
+        font-size: 1.2em;
+    }
+    .search{
+        background-color: #1A7A53;
+        margin: 0;
+        padding: 100px 30px;
+        text-align: center;
+    }
+    .search input{
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 0;
+        height: 30px;
+    }
+    .search t{
+        color: white;
+        font-size: 1.5em;
+    }
+    .search a{
+        color:black;
+        background-color: white;
+        padding-left: 0.7em;
+        border-radius: 20px;
+    }
+    .search path{
+        fill: black;
+    }
+    .search a:focus{
+        background-color: #1A7A53;
+        color: white;
+    }
+    .search a:hover path{
+        fill:white;
+    }
+}

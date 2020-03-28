@@ -3,6 +3,7 @@
 **/    
 .nav-bar{
     display: flex;
+    height: 7vh;
     align-items: center;
     padding: 1em;
     position: relative;
@@ -14,6 +15,9 @@ a{
 }
 .logo{
     min-width: 60%;
+}
+.logo img{
+    margin-left: 30px;
 }
 .nav-burger{
     display: none;
@@ -79,6 +83,11 @@ a{
 **/ 
 
 @media screen and (max-width: 550px) {
+    .logo img{
+        margin-left: 0px;
+        transform: scale(0.9);
+        margin-top: 10px;
+    }
     .list-container{
         display: none;
     }
