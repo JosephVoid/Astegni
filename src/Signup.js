@@ -5,7 +5,7 @@ import './css/signup.css'
 class Signup extends React.Component{
     render(){
         return(
-            <div className = "main">
+            <div style = {{display:"none"}} className = "main">
                 <div className = "the-circle">
                     <img src = {Ellipse}></img>
                 </div>
