@@ -6,7 +6,7 @@ import Ellipse from './assets/ellipse.svg'
 class Home extends React.Component{
     render(){
         return(
-            <div className = "main">
+            <div style = {{display:"none"}} className = "main">
                 <div className = "main-text">
                     <p className = "header-text" >Quality tutors,<br></br>Quality knowledge</p>
                     <p className = "secondary-text">We offer verified and highly skilled tutors from all over Ethiopia.</p>

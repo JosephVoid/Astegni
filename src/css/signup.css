@@ -1,0 +1,109 @@
+.the-circle{
+    position: absolute;
+    left: -600px;
+    bottom: -50%;
+}
+.sign-up-form{
+    margin: 0 auto;
+    width: 20%;
+}
+.sign-up-form > p{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.sign-up-form form{
+    box-shadow: 1px 2px 5px #0000002b;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 20px solid #1a7a53;
+}
+.input-container{
+    position: relative;
+    margin-bottom: 30px;
+}
+.input-container p{
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    color: #1a7a53;
+    top: -13px;
+    left: 10px;
+    padding: 0 5px;
+    background-color: white;
+}
+.input-container input{
+    display: block;
+    border-radius: 5px;
+    border: 1.5px solid #1a7a53;
+    height: 25px;
+    width: 95%;
+    padding: 5px 5px 0px;
+}
+input[type=date]::-webkit-datetime-edit{
+    opacity: 0.8;
+}
+[type=radio] { opacity: 0;display: none !important; }
+[type=radio] + label:first-of-type{margin-right: 3em;}
+[type=radio] + label::before {
+    background: #fff;
+    content: '';
+    display: inline-block;
+    border: 2px solid #1a7a53;
+    border-radius: 5px;
+    height: 1.2rem;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    width: 1.2rem;
+}
+
+[type=radio]:checked + label::before {
+    background: #1a7a53;
+}
+
+.sign-up-form button{
+    margin: auto;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 100px;
+    border: 2px solid #1a7a53;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    transition: all 200ms ease;
+}
+.sign-up-form button:hover,.sign-up-form button:focus{
+    background-color: #1a7a53;
+    color: white;
+}
+/**
+    For Medium screens 900
+**/
+
+@media screen and (max-width: 901px) {
+    .sign-up-form{
+        width: 40%;
+    }
+}
+
+/**
+    For Medium screens 768-900
+**/
+
+@media screen and (max-width: 768px) {
+    .the-circle{
+        display: none;
+    }
+}
+
+/**
+    For Small screens
+**/ 
+
+@media screen and (max-width: 550px) {
+    .sign-up-form{
+        width: 80%;
+    }
+}
